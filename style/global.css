@@ -3,3 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+
+    --content-pr: #fff;
+    --content-second: #C7C9CC;
+    --content-brand: #C58DE7;
+    --inverse: #030203;
+    /*Background*/
+    --bg-primary: #020202;
+    --bg-secondary: #111012;
+    --bg-tertiary: #24222E;
+    --bg-brand: #C58DE7;
+    --bg-gray: #3D3D3D;
+
+     /*Gradient*/
+     --gr-border: linear-gradient(90deg,rgba(119, 192, 175, 1) 0%, rgba(209, 220, 151, 1) 14%, rgba(233, 169, 179, 1) 32%, rgba(213, 134, 224, 1) 65%, rgba(145, 161, 250, 1) 84%);
+
+     /*Accent*/
+     --accent-pink: #D586E0;
+     --accent-blue: #91A1FA;
+     --accent-green: #77C0AF;
+     --accent-yellow: #D1DC97;
+     --accent-red: #E9A9B3;
+
+     /*Fonts*/
+     --display-lg: 800 small-caps 72px/130% 'Sora', sans-serif;
+     --display-md: 800 small-caps 40px/130% 'Sora', sans-serif;
+     --display-sm: 600 small-caps 2rem/130% 'Sora', sans-serif;
+     --overline: bold small-caps 1rem/150% 'Roboto Mono', monospace;
+     --p-lg: 400 1rem/150% 'Roboto Flex', sans-serif;
+     --p-md: 400 0.8rem/150% 'Roboto Flex', sans-serif;
+     --p-sm: 400 0.75rem/150% 'Roboto Flex', sans-serif;
+     --label-md: 600 1.75rem/150% 'Roboto Flex', sans-serif;
+     --label-sm: 600 1rem/150% 'Roboto Flex', sans-serif;
+     
+
+
+}
