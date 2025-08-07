@@ -11,8 +11,77 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <h1>Hello teste</h1>
 
-    <script src="./js/script.js-"></script>
+    <div class="bg-img">
+        <header>
+            <img src="./assets/logo.svg" alt="logo do sorteador de numeros">
+        </header>
+        <main>
+            <section class="info">
+                <h3>Online - Gratuito</h3>
+                <h1>SORTEADOR DE NÚMEROS</h1>
+
+                <div class="info-1">
+                    <img src="./assets/info.svg" alt="">
+                    <div>
+                        <span>Como funciona o sorteador de números?</span>
+                        <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+                    </div>
+                </div>
+
+                <div class="info-2">
+                    <img src="./assets/play.svg" alt="">
+                    <div>
+                        <span>Posso escolher o intervalo dos números?</span>
+                        <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="sorteador">
+                <h2>QUERO SORTEAR</h2>
+                <p>Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</p>
+
+                <div class="number-field">
+                    <div class="numbers">
+                        <label for="number">Números</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="numbers">
+                        <label for="number">de</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="numbers">
+                        <label for="number">Até</label>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="toggle">
+                    <button></button>
+                    <label for="button">Não repetir número</label>
+                </div>
+                
+                <div>
+                    <button class="btn">
+                        <div class="btn-solid">
+                            Sortear
+                            <img src="./assets/arrow.svg" alt="">
+                        </div>
+                    </button>
+                </div>
+
+                
+
+            </section>
+        </main>
+
+        
+
+        <script src="./js/script.js-"></script>
+    </div>
 </body>
 </html>

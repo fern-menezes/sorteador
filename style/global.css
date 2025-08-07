@@ -19,6 +19,7 @@
 
      /*Gradient*/
      --gr-border: linear-gradient(90deg,rgba(119, 192, 175, 1) 0%, rgba(209, 220, 151, 1) 14%, rgba(233, 169, 179, 1) 32%, rgba(213, 134, 224, 1) 65%, rgba(145, 161, 250, 1) 84%);
+     --gr-content: linear-gradient(90deg, rgba(199, 201, 204, 1) 0%, rgba(61, 61, 61, 1) 100%);
 
      /*Accent*/
      --accent-pink: #D586E0;
@@ -31,13 +32,22 @@
      --display-lg: 800 small-caps 72px/130% 'Sora', sans-serif;
      --display-md: 800 small-caps 40px/130% 'Sora', sans-serif;
      --display-sm: 600 small-caps 2rem/130% 'Sora', sans-serif;
-     --overline: bold small-caps 1rem/150% 'Roboto Mono', monospace;
+     --overline: bold 1rem/150% 'Roboto Mono', monospace;
      --p-lg: 400 1rem/150% 'Roboto Flex', sans-serif;
      --p-md: 400 0.8rem/150% 'Roboto Flex', sans-serif;
      --p-sm: 400 0.75rem/150% 'Roboto Flex', sans-serif;
-     --label-md: 600 1.75rem/150% 'Roboto Flex', sans-serif;
+     --label-md: 600 1.25rem/150% 'Roboto Flex', sans-serif;
      --label-sm: 600 1rem/150% 'Roboto Flex', sans-serif;
      
+}
 
+body{
+    background-image: url(../assets/bg-image.png);
+    background-repeat: no-repeat;
+    background-color: var(--bg-primary);
+    background-size: cover;
+}
 
+header{
+    padding: 5rem 7.5rem 0 ;
 }
