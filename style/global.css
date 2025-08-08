@@ -29,8 +29,8 @@
      --accent-red: #E9A9B3;
 
      /*Fonts*/
-     --display-lg: 800 small-caps 72px/130% 'Sora', sans-serif;
-     --display-md: 800 small-caps 40px/130% 'Sora', sans-serif;
+     --display-lg: 800 small-caps clamp(2.5rem, 6vw, 4.5rem)/130% 'Sora', sans-serif;
+     --display-md: 800 small-caps 2.5rem/130% 'Sora', sans-serif;
      --display-sm: 600 small-caps 2rem/130% 'Sora', sans-serif;
      --overline: bold 1rem/150% 'Roboto Mono', monospace;
      --p-lg: 800 3rem/150% 'Roboto Flex', sans-serif;
@@ -50,4 +50,17 @@ body{
 
 header{
     padding: 5rem 7.5rem 0 ;
+}
+@media (max-width: 768px) {
+
+    body{
+    background-image: url(../assets/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-color: var(--bg-primary);
+    background-size: cover;
+}
+
+  header {
+    padding: 2rem 1.5rem 0;
+  }
 }

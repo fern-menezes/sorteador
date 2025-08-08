@@ -1,22 +1,35 @@
 main{
     max-width: 85rem;
     padding: 5rem 8rem;
-    display: flex;
-    gap: 6.75rem;
-
+    display: grid;
+    grid-template-areas:
+        "title sorteador"
+        "info-extra sorteador";
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  
     & .info{
         color: var(--content-pr);
+        display: contents;
 
-        & h3{
-        color: var(--content-second);
-        font: var(--overline);
-        text-transform: uppercase;
-    }
-        & h1{
-            font: var(--display-lg);
-            width: 100%;
-            margin-bottom: 2.25rem;
-    }
+        & .info-extra{
+            grid-area: info-extra;
+        }
+
+        & .title {
+            grid-area: title;
+
+            & h3{
+            color: var(--content-second);
+            font: var(--overline);
+            text-transform: uppercase;
+        }
+            & h1{
+                font: var(--display-lg);
+                width: 100%;
+            }
+        }
+
         & p{
             font: var(--p-sm);
             width: 60%;
@@ -35,11 +48,14 @@ main{
 
         & .info-1{
             margin-bottom: 2.25rem;
+            
         }
+        
     }
 
     & .sorteador{
         color: var(--content-brand);
+        grid-area: sorteador;
 
         & p, .number-field, .toggle{
             margin-bottom: 2rem;
@@ -48,12 +64,12 @@ main{
         & h2{
             font: var(--label-md);
             color: var(--content-pr);
+            
         }
 
         & p, .toggle{
             font: var(--p-md);
         }
-
     
     }
 
@@ -73,12 +89,14 @@ main{
             content: '';
             position: absolute;
             top: -3px;
-            left: -2px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
             z-index: -1;
             background: linear-gradient(90deg,rgba(119, 192, 175, 1) 0%, rgba(209, 220, 151, 1) 14%, rgba(233, 169, 179, 1) 32%, rgba(213, 134, 224, 1) 65%, rgba(145, 161, 250, 1) 84%) border-box;
             background-size: 400% 100%;
-            padding: .75rem 1.95rem 3.1rem;
-            width: 88%;
+            /*padding: .75rem 1.95rem 3.1rem;*/
+            
             border-radius: 0.5rem;
             opacity: 0;
 
@@ -139,3 +157,41 @@ main{
         background-position: 0 0;
     }
 }
+
+@media (max-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "sorteador"
+      "info-extra";  
+    padding: 1.5rem;
+  }
+
+  
+
+  main .info p {
+    width: 100%;
+  }
+
+  main .btn {
+    width: 100%;
+    max-width: 400px;
+    font-size: 1rem;
+  }
+
+  #sorteado .num-sorteados {
+    gap: 1rem;
+    font-size: 2rem;
+  }
+
+  .num-sorteados span {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: var(--bg-tertiary);
+  }
+  
+
+}
+
