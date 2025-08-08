@@ -54,20 +54,6 @@ main{
             font: var(--p-md);
         }
 
-        & .toggle button{
-            background-color: var(--content-brand);
-            width: 40px;
-            height: 20px;
-            border-radius: 20px;
-            border: none;
-
-            &::before{
-                content: "";
-                background-color: var(--content-pr);
-                
-            }
-        }
-
     
     }
 
@@ -129,11 +115,15 @@ main{
 
         & .num-sorteados{
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             gap: 2rem;
             font: var(--p-lg);
         }
+    }
+    #btnSortearNovamente{
+        margin-top: 1.75rem;
     }
 }
 
