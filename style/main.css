@@ -64,7 +64,6 @@ main{
         & h2{
             font: var(--label-md);
             color: var(--content-pr);
-            
         }
 
         & p, .toggle{
@@ -167,10 +166,8 @@ main{
       "sorteador"
       "info-extra";  
     padding: 1.5rem;
+    gap: 2rem;
   }
-
-  
-
   main .info p {
     width: 100%;
   }
@@ -190,6 +187,10 @@ main{
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     background-color: var(--bg-tertiary);
+  }
+
+  .sorteador{
+    padding: 0;
   }
   
 
